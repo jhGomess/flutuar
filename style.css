@@ -7,6 +7,11 @@
 :root {
   font-size: 62.5%;
   position: relative;
+
+  --primary-color: #3f3d56;
+  --span-color: #ee24ff;
+  --paragraph-color: #828282;
+  --line-color: #eceff2;
 }
 
 body {
@@ -14,6 +19,8 @@ body {
 
   text-align: center;
   min-height: 100vh;
+
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -29,12 +36,38 @@ main img {
 
 main h1 {
   margin-bottom: 1.6rem;
+  font-family: "Dosis", sans-serif;
+
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main h1 span {
+  color: var(--span-color);
+  font-weight: 700;
 }
 
 main section {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+
+  width: 54rem;
+  margin: 0 auto;
+}
+
+main section p {
+  color: var(--paragraph-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+main section p span {
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 footer {
@@ -46,7 +79,15 @@ footer {
   width: 39rem;
   margin: 0 auto 14rem;
   padding-top: 1.6rem;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--line-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.2rem;
 }
 
 .wave {
