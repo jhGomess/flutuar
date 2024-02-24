@@ -18,12 +18,9 @@ body {
   font-size: 1.6rem;
 
   text-align: center;
+  min-height: 100vh;
 
-  background: linear-gradient(
-    180deg,
-    rgba(227, 255, 248, 0) 95%,
-    rgb(44, 46, 65) 100%
-  );
+  position: relative;
 
   font-family: "Open Sans", sans-serif;
 }
@@ -92,7 +89,7 @@ footer ul {
   gap: 4.2rem;
 
   list-style: none;
-  padding-bottom: 4rem;
+  padding-bottom: 14rem;
 }
 
 footer ul li a {
@@ -104,5 +101,9 @@ footer ul li a {
 }
 
 .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  height: 12rem;
 }
