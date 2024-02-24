@@ -18,15 +18,14 @@ body {
   font-size: 1.6rem;
 
   text-align: center;
-  min-height: 100vh;
 
-  background: url(./assets/wave.png) no-repeat center bottom;
-  background-size: contain;
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 95%,
+    rgb(44, 46, 65) 100%
+  );
 
   font-family: "Open Sans", sans-serif;
-}
-
-.page {
 }
 
 main {
@@ -77,18 +76,26 @@ main section p span {
 }
 
 footer {
+  width: 100%;
+}
+
+footer .line {
+  width: 39rem;
+  margin: 0 auto 1.6rem;
+  border: 1px solid var(--line-color);
+}
+
+footer ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4.2rem;
 
-  width: 39rem;
-  margin: 0 auto 16rem;
-  padding-top: 1.6rem;
-  border-top: 1px solid var(--line-color);
+  list-style: none;
+  padding-bottom: 4rem;
 }
 
-footer a {
+footer ul li a {
   color: var(--primary-color);
   text-decoration: none;
   font-size: 1.5rem;
@@ -96,9 +103,6 @@ footer a {
   line-height: 2.2rem;
 }
 
-/* .wave {
+.wave {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
+}
